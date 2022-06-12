@@ -1,6 +1,6 @@
 import React from "react";
+
 import Form from "./components/Form";
-import Login from './components/Login'
 
 const App = () => {
   return (
@@ -14,7 +14,7 @@ const App = () => {
         jikoidod
       </div>
       <div className="m-5 justify-center flex">
-        <Login />
+        <Form />
       </div>
     </div>
   );
