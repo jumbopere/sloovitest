@@ -1,0 +1,7 @@
+export function prepareAuthHeaders(headers) {
+    const accessToken = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTUwNDc0MjksIm5iZiI6MTY1NTA0NzQyOSwianRpIjoiYjBiZTA5MTItZTA4My00ODgwLTgxNmUtYmJjMTY4N2U2YWIzIiwiaWRlbnRpdHkiOnsibmFtZSI6IlN1bmRhciBQaWNoYWkiLCJlbWFpbCI6InNtaXRod2lsbHMxOTg5QGdtYWlsLmNvbSIsInVzZXJfaWQiOiJ1c2VyXzRlZTRjZjY3YWQ0NzRhMjc5ODhiYzBhZmI4NGNmNDcyIiwiaWNvbiI6Imh0dHA6Ly93d3cuZ3JhdmF0YXIuY29tL2F2YXRhci9jZjk0Yjc0YmQ0MWI0NjZiYjE4NWJkNGQ2NzRmMDMyYj9kZWZhdWx0PWh0dHBzJTNBJTJGJTJGczMuc2xvb3ZpLmNvbSUyRmF2YXRhci1kZWZhdWx0LWljb24ucG5nIiwiYnlfZGVmYXVsdCI6Im91dHJlYWNoIn0sImZyZXNoIjpmYWxzZSwidHlwZSI6ImFjY2VzcyJ9.oB5juANy2VkWvCAM3xFtYyjFAGkgR9hKQyZUZoT0Rvc'
+    if(accessToken) {
+        headers.set('Authorization', `Bearer ${accessToken}`)
+    }
+    return headers;
+}
